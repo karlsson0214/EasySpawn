@@ -11,9 +11,9 @@ namespace EasySpawn
     public class SpawnWorld : World
     {
         private Random random = new Random();
-        public SpawnWorld() : base(700, 500)
+        public SpawnWorld() : base(700, 500) // size of world
         {
-            GameArt.Add("worm");
+            
         }
 
         public override void Update(GameTime gameTime)
