@@ -19,7 +19,15 @@ namespace EasySpawn
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
-            
+
+            if (random.Next(0, 100) < 50)
+            {
+                SpawnWorm();
+            }
+
+        }
+        private void SpawnWorm()
+        {
             int x = random.Next(0, Width);
             int y = random.Next(0, Height);
 
