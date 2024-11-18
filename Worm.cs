@@ -17,7 +17,10 @@ namespace EasySpawn
 
         public override void Update(GameTime gameTime)
         {
-            // do nothing
+            if (IsTouching(typeof(Worm)))
+            {
+                RemoveTouching(typeof(Worm));
+            }
         }
     }
 }
