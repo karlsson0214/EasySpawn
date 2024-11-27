@@ -24,6 +24,7 @@ namespace EasySpawn
             {
                 SpawnWorm();
             }
+            ShowText("Worms: " + NumberOfActors(typeof(Worm)), 200, 100);
 
         }
         private void SpawnWorm()
